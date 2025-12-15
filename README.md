@@ -37,4 +37,35 @@ The implemented pipeline consists of the following stages:
 
 4. **TextRank Scoring**
    - PageRank-style power iteration
-   - Damping factor and c
+   - Damping factor and convergence monitoring
+
+5. **Sentence Selection**
+   - Top-k extraction
+   - MMR-based relevance–diversity optimization
+
+---
+
+## 🧪 Experiments
+
+- **Toy example** (news-style article) to illustrate each algorithmic step
+- **Real-world evaluation** on a small sample from the CNN/DailyMail dataset
+- Analysis of:
+  - Edge threshold (τ)
+  - Damping factor (d)
+  - MMR trade-off parameter (λ)
+- Computational complexity and runtime analysis
+
+---
+
+## 📊 Key Properties
+
+- Fully **unsupervised**
+- **No external libraries** (no NumPy, no NLTK, no sklearn)
+- Completely **interpretable and auditable**
+- Modular design: Graph, TextRank, and MMR components separated
+- Suitable for educational and algorithmic analysis purposes
+
+---
+
+
+
